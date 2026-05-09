@@ -1,5 +1,5 @@
 """
-lstm_model.py — LSTM con TensorFlow/Keras.
+Modelo_LSTM.py — LSTM con TensorFlow/Keras.
 Métricas: MSE, RMSE, R²
 """
 import numpy as np

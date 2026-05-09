@@ -1,14 +1,15 @@
 """
 main.py — Pipeline principal + 3 casos de prueba.
 Uso: python main.py --data <ruta_csv>
+python main.py --data PRSA_data_2010.1.1-2014.12.31.csv --model lstm_pm25.keras
 """
 import argparse
 import numpy as np
 import tensorflow as tf
 
-from preprocessing import prepare, FEATURES, SEQ_LEN, HORIZON
-from lstm_model    import build_lstm, train, evaluate
-from expert_system import razonar
+from Preprocesamiento_Datos import prepare, FEATURES, SEQ_LEN, HORIZON
+from Modelo_LSTM    import build_lstm, train, evaluate
+from Sistema_Experto import razonar
 
 
 # ── Entrenamiento ────────────────────────────────────────────────────────────

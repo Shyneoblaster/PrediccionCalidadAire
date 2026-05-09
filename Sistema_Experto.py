@@ -1,5 +1,5 @@
 """
-expert_system.py — Motor de encadenamiento hacia adelante (Forward Chaining).
+Sistema_Experto.py — Motor de encadenamiento hacia adelante (Forward Chaining).
 Reglas derivadas de NOM-172-SEMARNAT-2019, Tablas 5, 10 y 12.
 """
 

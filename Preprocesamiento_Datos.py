@@ -1,5 +1,5 @@
 """
-preprocessing.py — Carga, limpieza y preparación de secuencias para LSTM.
+Preprocesamiento_Datos.py — Carga, limpieza y preparación de secuencias para LSTM.
 Dataset: Beijing PM2.5 (UCI ML Repository)
 """
 import numpy as np
@@ -22,7 +22,6 @@ def load_and_clean(path: str) -> pd.DataFrame:
 
 def make_sequences(data: np.ndarray, seq_len: int = SEQ_LEN,
                    horizon: int = HORIZON):
-    """Genera pares (X, y) para predicción multistep."""
     X, y = [], []
     for i in range(len(data) - seq_len - horizon + 1):
         X.append(data[i: i + seq_len])
